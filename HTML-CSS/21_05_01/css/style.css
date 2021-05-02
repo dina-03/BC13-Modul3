@@ -1,0 +1,154 @@
+* {
+    color: rgb(7, 7, 7);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+body {
+    background: url(./../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#content {
+    width: 50%;
+    margin: auto;
+}
+
+.header {
+    background-attachment: fixed fixed;
+    position: absolute;
+    margin: 0 auto;
+    top: -5px;
+    left: 35%;
+    border: 2px solid goldenrod;
+}
+
+.header h1 {
+    color: goldenrod;
+    font-weight: 800;
+    background: url(./../img/gold-header.png) no-repeat;
+    background-color: rgb(255, 255, 254);
+    text-align: center;
+    position: fixed;
+}
+
+.bad-scr {
+    width: 400px;
+    font-family: 'Bad Script', cursive;
+    margin: 0 auto;
+    color: #000;
+    background-color: azure;
+    padding: 20px 0 10px 0;
+
+}
+
+.bad-scr i {
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 55%;
+}
+
+.bad-scr p {
+    font-family: 'Comfortaa', cursive;
+    color: rgb(53, 45, 3);
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding-left: 12%;
+    padding-right: 10px;
+    padding-bottom: 2%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: 'Pompadur';
+    src: url('/Rukopis/Pompadur.ttf');
+}
+
+.bad-scr p::first-letter {
+    /*   font-family: 'Bad Script', cursive; */
+    font-family: 'Pompadur';
+    font-size: 26px;
+    font-weight: 900;
+    color: rgb(167, 121, 6);
+}
+
+.bad-scr span {
+    font-family: 'Comfortaa', cursive;
+    font-style: italic;
+    color: rgb(119, 87, 7);
+    padding-left: 1%;
+    font-weight: 600;
+}
+
+.bad-scr img {
+    overflow: hidden;
+    vertical-align: middle;
+    padding-left: 17%;
+}
+
+.ded {
+    width: 350px;
+    height: 330px;
+    position: fixed;
+    margin: 300px 80px 0 -200px;
+    background: url(./../img/starik.png);
+}
+
+.ded:hover {
+    background: url(./../img/dedAndFish.png);
+}
+
+.baba {
+    background: url(./../img/babka.png);
+    display: block;
+    width: 450px;
+    height: 560px;
+    position: fixed;
+    margin: 180px 0 0 550px;
+}
+
+.baba:hover {
+    background: url(./../img/carica.png);
+    width: 450px;
+    height: 560px;
+}
+
+.indent {
+    height: 80px;
+}
+
+.book {
+    font-family: 'Comfortaa', cursive;
+    width: 250px;
+    height: 50px;
+    position: fixed;
+    margin-left: 10%;
+}
+
+.book a {
+    text-decoration: none;
+    color: rgb(7, 97, 74);
+}
+
+.book a:hover {
+    color: red;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.book span {
+    padding-left: 15px;
+    padding-top: 45px;
+    text-align: right;
+    float: right;
+}
+
+.book img {
+    width: 100px;
+    position: fixed;
+}
+
+.book:hover img {
+    width: 120px;
+}
