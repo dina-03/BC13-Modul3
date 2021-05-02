@@ -39,7 +39,6 @@ body {
     color: #000;
     background-color: azure;
     padding: 20px 0 10px 0;
-
 }
 
 .bad-scr i {
@@ -115,7 +114,7 @@ body {
 }
 
 .indent {
-    height: 80px;
+    height: 75px;
 }
 
 .book {
