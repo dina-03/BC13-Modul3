@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1195px;
+    margin: 0 auto;
+
+}
+
+header {
+    background: #6e78b7;
+    padding: 50px 0;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+header .menu a {
+    width: 260px;
+    background: #d86a43;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 10px -1px #000;
+}
+
+header .menu a:hover {
+    box-shadow: none;
+    background: #e44d26;
+}
+
+main {
+    background: #deeafb;
+    padding: 55px 0;
+}
+
+.technology {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technology img {
+    width: 360px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.technology .arrow {
+    width: 41px;
+    height: 22px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 360px;
+    height: 230px;
+    margin-bottom: 35px;
+}
+
+.news article {
+    display: flex;
+    background: #fff;
+    padding: 20px 25px 15px 7px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.news article .description {
+    color: #511a99;
+    font-size: 16px;
+    width: 760px;
+}
+
+.news article img {
+    width: 340px;
+    height: 260px;
+    margin-right: 55px;
+}
+
+.news article:nth-child(even) img {
+    order: 1;
+    margin-right: 10px;
+    margin-left: 55px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    width: 400px;
+    min-height: 425px;
+    background: #6e78b7;
+    color: #fff;
+    box-shadow: 0 0 10px -1px #000;
+    border-radius: 8px;
+    font-size: 18.5px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.cards .card h3 {
+    background: #d86a43;
+    margin: 0;
+    padding: 25px 0 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.cards .card .description {
+    padding: 35px 40px 0 40px;
+}
+
+.cards .card .description p {
+    margin: 0;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
+.cards .card .btn {
+    width: 260px;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #d86a43;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 14px 0;
+    box-shadow: 0 0 10px -1px #000;
+}
+
+footer {
+    background: #6e78b7;
+    font-size: 21px;
+    text-align: center;
+    padding: 110px 0 105px;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .technology {
+        flex-direction: column;
+    }
+    
+    .technology img {
+        max-width: 620px;
+        width: 100%;
+        height: auto;
+        max-height: 315px;
+        margin-bottom: 50px;
+    }
+    
+    .technology .arrow {
+        display: none;
+    }
+    .gallery img {
+        flex-grow: 1;
+        height: auto;
+    }
+    
+    .news article .description {
+        width: 100%;
+        flex-shrink: 2;
+    }
+    
+    .news article img {
+      flex-shrink: 1;
+    }
+}
+
+@media (max-width:991px) {
+    .cards .card{
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width: 768px) {
+    header .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .menu a{
+        width: 90%;
+        margin-bottom: 45px;
+    }
+    main{
+        padding-top: 30px;
+    }
+    .news article {
+       flex-direction: column;
+       padding: 50px 40px 60px;
+       margin: 0 24px 70px;
+    }
+    
+    .news article .description {
+       font-size: 25px;
+    }
+    
+    .news article img {
+       width: 100%;
+       height: auto;
+       max-height: 350px;
+       margin-right: 0;
+    }
+    
+    .news article:nth-child(even) img {
+       order: 0;
+       margin-left: 0;
+    }
+    
+    .cards .card {
+       font-size: 29px;
+       max-width: 625px;
+       width: 100%;
+       min-height: 665px;
+    }
+    
+    .cards .card .btn {
+       font-size: 29px;
+       width: 315px;
+       padding: 15px 0;
+    }
+
+    footer{
+        padding: 55px 0 50px;
+    }
+}
